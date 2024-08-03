@@ -1,6 +1,7 @@
 import 'package:custom_calendar/custom_calendar.dart';
 import 'package:flutter/material.dart';
 
+import 'calendar_models.dart';
 import 'day_tile.dart';
 
 void main() {
@@ -43,7 +44,17 @@ class _MyHomePageState extends State<MyHomePage> {
           DateSelectionRange(
             start: DateTime(2024, 8, 5
             ),
-            end: DateTime(2024, 8, 10),
+            end: DateTime(2024, 8, 15),
+          ),
+          DateSelectionRange(
+            start: DateTime(2024, 8, 1
+            ),
+            end: DateTime(2024, 8, 15),
+          ),
+          DateSelectionRange(
+            start: DateTime(2024, 8, 7
+            ),
+            end: DateTime(2024, 8, 31),
           ),
 
         ],

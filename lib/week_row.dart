@@ -7,14 +7,12 @@ class WeekRow extends StatelessWidget {
   final DateTime currentDate;
   final DateTime selectedDate;
   final Function(DateTime) onTap;
-  final List<DateSelectionRange>? selectedRanges;
 
   const WeekRow({
     required this.week,
     required this.currentDate,
     required this.selectedDate,
     required this.onTap,
-    this.selectedRanges,
     super.key,
   });
 
@@ -33,7 +31,6 @@ class WeekRow extends StatelessWidget {
               day: day,
               isCurrentMonth: isCurrentMonth,
               selectedDate: selectedDate,
-              selectedRanges: selectedRanges,
             ),
           );
         }),
